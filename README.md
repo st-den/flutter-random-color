@@ -30,3 +30,5 @@ Tested on Android, Web and Desktop.
 5. Build and run the app: `flutter run --release`.
 
 To check your Flutter installation for possible problems, run `flutter doctor`.
+
+And to run the tests: `flutter test test/unit_test.dart`
