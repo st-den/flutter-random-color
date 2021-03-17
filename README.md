@@ -25,7 +25,7 @@ Tested on Android, Web and Desktop.
 
 1. [Install Flutter](https://flutter.dev/docs/get-started/install).
 2. Clone this project and `cd` into it.
-3. Run `flutter create .` to recreate the missing project files.
+3. Run `flutter create --project-name="test_task" .` to recreate the missing project files.
 4. Ensure you have an available device in `flutter devices`.
 5. Build and run the app: `flutter run --release`.
 
