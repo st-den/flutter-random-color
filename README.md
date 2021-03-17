@@ -15,10 +15,10 @@ Tested on Android, Web and Desktop.
 
 ## Screenshots
 
-<img src="screenshots/home.jpg" width="300"/>
+<img src="screenshots/home.jpg" align="left" width="300"/>
 <img src="screenshots/text.jpg" width="300"/>
 
-<img src="screenshots/instructions.jpg" width="300"/>
+<img src="screenshots/instructions.jpg" align="left" width="300"/>
 <img src="screenshots/copy.jpg" width="300"/>
 
 ## Instructions
