@@ -90,6 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: _backgroundColor,
       appBar: AppBar(
         title: _buildTitle(),
         centerTitle: true,
@@ -106,25 +107,22 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
       ),
-      body: Material(
-        color: _backgroundColor,
-        child: InkWell(
-          splashColor: _backgroundColor.contrastingColor,
-          hoverColor: Colors.transparent, // Removes a weird hover effect.
-          onTap: () => setState(() {
-            _backgroundColor = _colorGenerator.randomColor();
-          }),
-          onLongPress: () => setState(() {
-            _backgroundColor = _colorGenerator.randomMaterialColor();
-          }),
-          child: Center(
-            child: Text(
-              'Hey there',
-              style: Theme.of(context)
-                  .textTheme
-                  .headline2!
-                  .copyWith(color: _backgroundColor.contrastingColor),
-            ),
+      body: InkWell(
+        splashColor: _backgroundColor.contrastingColor,
+        hoverColor: Colors.transparent, // Removes a weird hover effect.
+        onTap: () => setState(() {
+          _backgroundColor = _colorGenerator.randomColor();
+        }),
+        onLongPress: () => setState(() {
+          _backgroundColor = _colorGenerator.randomMaterialColor();
+        }),
+        child: Center(
+          child: Text(
+            'Hey there',
+            style: Theme.of(context)
+                .textTheme
+                .headline2!
+                .copyWith(color: _backgroundColor.contrastingColor),
           ),
         ),
       ),
